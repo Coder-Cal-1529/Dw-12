@@ -48,5 +48,5 @@ pub fn count_passing(scores: &[i32]) -> usize {
 /// ```
 pub fn pass_summary(scores: &[i32]) -> String {
     let passing = count_passing(scores);
-    format!("{} of {} passed", passing, 4)
+    format!("{} of {} passed", passing, scores.len())
 }
